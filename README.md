@@ -38,7 +38,9 @@ tzdata==2025.2
 
 
 ```
+## Description
 
+This project demonstrates how the nonvolatile memory of the Arduino microcontollers can be affected without using the standard serial port.  This in fact can directly affect the second serial bus of the device.  This script takes advantage of the ArduinoISP example script provided with the IDE.  The Arduino is able to process AVR with its avrdude function (language) and can directly write a script to the microcontroller.  This takes advantage of a different connection scheme as described in project one.  For this application, we make use of the SPI pins on the head of the board.  We can connect to MOSI, MISO, and CLk and are able to send commands to the device to execute.  Additionally the device is connected to a breadboard with indicator LEDs to describe current behavior
 ## Implementation
 
 This program can be run through main.py
